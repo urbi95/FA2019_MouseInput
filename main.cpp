@@ -10,10 +10,6 @@ const int SQUARE_WIDTH  = 20;
 SDL_Window* win = nullptr;
 SDL_Renderer* ren = nullptr;
 SDL_Event e;
-int mouseX;
-int mouseY;
-int relX;
-int relY;
 
 bool init(){
     bool success = true;
@@ -53,10 +49,17 @@ void updateScreen(Square square){
 int main() {
     Square square = Square((SCREEN_WIDTH - SQUARE_WIDTH) / 2, (SCREEN_HEIGHT - SQUARE_WIDTH) / 2, SQUARE_WIDTH);
     bool quit = false;
-    bool mouseButtonDown = false;
+    bool dragging = false;
+    int mouseX;
+    int mouseY;
+    int relX=0;
+    int relY=0;
 
     if (init()){
         while (!quit){
+            //Draw square
+            updateScreen(square);
+
             while (SDL_PollEvent(&e) != 0){
                 mouseX = e.motion.x;
                 mouseY = e.motion.y;
@@ -65,25 +68,24 @@ int main() {
                     quit = true;
                 }
                 else if (e.type == SDL_MOUSEBUTTONDOWN){
-                    if (!mouseButtonDown && square.isInside(mouseX, mouseY)){
-                        //First time we click inside the square
-                        mouseButtonDown = true;
+                    if (!dragging && square.isInside(mouseX, mouseY)){
+                        //We clicked inside the square
+                        dragging = true;
                         relX = square.getX() - mouseX;
                         relY = square.getY() - mouseY;
                     }
                 }
                 else if (e.type == SDL_MOUSEBUTTONUP){
-                    mouseButtonDown = false;
+                    dragging = false;
                 }
 
-                if (mouseButtonDown){
+                if (dragging){
                     square.setX(relX + mouseX);
                     square.setY(relY + mouseY);
 
                     updateScreen(square);
                 }
             }
-            updateScreen(square);
         }
     }
 
