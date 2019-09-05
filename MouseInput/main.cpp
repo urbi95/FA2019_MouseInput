@@ -24,7 +24,7 @@ bool init(){
         success = false;
     }
     else {
-        win = SDL_CreateWindow("Drag the square!", 100, 100, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOWSHOW);
+        win = SDL_CreateWindow("Drag the square!", 100, 100, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
         if (win == nullptr){
             std::cout << "SDL_CreateWindow Error: " << SDL_GetError() << std::endl;
             success = false;
@@ -46,7 +46,7 @@ void updateScreen(Square square){
     SDL_SetRenderDrawColor(ren, 0xFF, 0xFF, 0xFF, 0xFF);
     SDL_RenderClear(ren);
     //Render square with renderer
-    square.render();
+    square.render(ren);
     SDL_RenderPresent(ren);
 }
 
