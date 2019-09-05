@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/MouseInput.dir/main.cpp.o  -o MouseInput -lSDL2 
