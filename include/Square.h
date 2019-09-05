@@ -3,6 +3,7 @@
 
 class Square{
 private:
+    //Square corners are at (m_x, m_y), (m_x+m_width, m_y), (m_x, m_y+m_width), (m_x+m_width, m_y+m_width)
     int m_x;
     int m_y;
     int m_width;
@@ -28,9 +29,11 @@ public:
     }
 
     bool isInside(int x, int y){
+        //Return whether point (x, y) lies inside square
         return (m_x < x) && (x < m_x + m_width) && (m_y < y) && (y < m_y + m_width);
     }
     bool render(SDL_Renderer* ren){
+        //Render red square onto screen
         SDL_Rect fillRect = {m_x, m_y, m_width, m_width};
         SDL_SetRenderDrawColor(ren, 0xFF, 0x00, 0x00, 0xFF);
         SDL_RenderFillRect(ren, &fillRect);

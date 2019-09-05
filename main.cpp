@@ -2,7 +2,6 @@
 #include <SDL.h>
 
 #include "Square.h"
-#include "cleanup.h"
 
 const int SCREEN_WIDTH  = 640;
 const int SCREEN_HEIGHT = 480;
@@ -19,6 +18,7 @@ int relY;
 bool init(){
     bool success = true;
 
+    //Always check for errors while initializing
     if (SDL_Init(SDL_INIT_VIDEO) != 0){
         std::cout << "SDL_Init Error: " << SDL_GetError() << std::endl;
         success = false;
@@ -87,7 +87,9 @@ int main() {
         }
     }
 
-    cleanup(win, ren);
+    //Clean up window and renderer
+    SDL_DestroyWindow(win);
+    SDL_DestroyRenderer(ren);
     SDL_Quit();
 
     return 0;

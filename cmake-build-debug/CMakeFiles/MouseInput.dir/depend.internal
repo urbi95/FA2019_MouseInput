@@ -4,7 +4,7 @@
 CMakeFiles/MouseInput.dir/main.cpp.o
  ../include/Square.h
  ../include/cleanup.h
- /home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/main.cpp
+ /home/urbi/Documents/FA_2019/fa2019_mouseinput/main.cpp
  /usr/include/SDL2/SDL.h
  /usr/include/SDL2/SDL_assert.h
  /usr/include/SDL2/SDL_atomic.h

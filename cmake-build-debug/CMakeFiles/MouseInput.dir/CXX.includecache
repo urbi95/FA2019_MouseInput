@@ -14,15 +14,15 @@ utility
 SDL.h
 -
 
-/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/main.cpp
+/home/urbi/Documents/FA_2019/fa2019_mouseinput/main.cpp
 iostream
 -
 SDL.h
 -
 Square.h
-/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/Square.h
+/home/urbi/Documents/FA_2019/fa2019_mouseinput/Square.h
 cleanup.h
-/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cleanup.h
+/home/urbi/Documents/FA_2019/fa2019_mouseinput/cleanup.h
 
 /usr/include/SDL2/SDL.h
 SDL_main.h

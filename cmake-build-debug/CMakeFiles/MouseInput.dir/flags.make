@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++1z
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/include/SDL2 -I/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/include 
+CXX_INCLUDES = -I/usr/include/SDL2 -I/home/urbi/Documents/FA_2019/fa2019_mouseinput/include 
 

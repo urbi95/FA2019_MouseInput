@@ -1,3 +1,3 @@
-/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/CMakeFiles/MouseInput.dir
-/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/CMakeFiles/FA2019_MouseInput.dir
+/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/CMakeFiles/edit_cache.dir

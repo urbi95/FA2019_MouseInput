@@ -5,37 +5,37 @@
 		<Option title="MouseInput"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SDL2\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SDL2\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug"/>
+				<Option working_dir="/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug"/>
+				<Option working_dir="/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="MouseInput">
-				<Option output="/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/MouseInput" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug"/>
+				<Option output="/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/MouseInput" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/include/SDL2"/>
-					<Add directory="/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/include"/>
+					<Add directory="/home/urbi/Documents/FA_2019/fa2019_mouseinput/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -46,21 +46,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 MouseInput"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 MouseInput"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="MouseInput/fast">
-				<Option output="/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/MouseInput" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug"/>
+				<Option output="/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/MouseInput" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/include/SDL2"/>
-					<Add directory="/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/include"/>
+					<Add directory="/home/urbi/Documents/FA_2019/fa2019_mouseinput/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -71,31 +71,31 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 MouseInput/fast"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 MouseInput/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug"/>
+				<Option working_dir="/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/main.cpp">
+		<Unit filename="/home/urbi/Documents/FA_2019/fa2019_mouseinput/main.cpp">
 			<Option target="MouseInput"/>
 		</Unit>
-		<Unit filename="/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/CMakeLists.txt">
+		<Unit filename="/home/urbi/Documents/FA_2019/fa2019_mouseinput/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/urbi/Documents/FA_2019/fa2019_mouseinput/MouseInput/../../../../../../usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SDL2\"/>
+		<Unit filename="/home/urbi/Documents/FA_2019/fa2019_mouseinput/../../../../../usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SDL2\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
