@@ -1,4 +1,4 @@
-# Install script for directory: /home/urbi/Documents/FA_2019/fa2019_mouseinput
+# Install script for directory: /home/urbi/Documents/FA_2019/FA2019_MouseInput
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/urbi/Documents/FA_2019/fa2019_mouseinput/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/urbi/Documents/FA_2019/FA2019_MouseInput/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

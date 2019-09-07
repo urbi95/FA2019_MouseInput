@@ -61,8 +61,7 @@ int main() {
             updateScreen(square);
 
             while (SDL_PollEvent(&e) != 0){
-                mouseX = e.motion.x;
-                mouseY = e.motion.y;
+                SDL_GetMouseState(&mouseX, &mouseY);
 
                 if (e.type == SDL_QUIT){
                     quit = true;
