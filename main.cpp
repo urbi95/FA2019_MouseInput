@@ -7,11 +7,7 @@ const int SCREEN_WIDTH  = 640;
 const int SCREEN_HEIGHT = 480;
 const int SQUARE_WIDTH  = 20;
 
-SDL_Window* win = nullptr;
-SDL_Renderer* ren = nullptr;
-SDL_Event e;
-
-bool init(){
+bool init(SDL_Window** win, SDL_Renderer** ren){
     bool success = true;
 
     //Always check for errors while initializing
@@ -20,14 +16,14 @@ bool init(){
         success = false;
     }
     else {
-        win = SDL_CreateWindow("Drag the square!", 100, 100, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
-        if (win == nullptr){
+        *win = SDL_CreateWindow("Drag the square!", 100, 100, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+        if (*win == nullptr){
             std::cout << "SDL_CreateWindow Error: " << SDL_GetError() << std::endl;
             success = false;
         }
         else {
-            ren = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
-            if (ren == nullptr){
+            *ren = SDL_CreateRenderer(*win, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+            if (*ren == nullptr){
                 std::cout << "SDL_CreateRenderer Error: " << SDL_GetError() << std::endl;
                 success = false;
             }
@@ -37,7 +33,7 @@ bool init(){
     return success;
 }
 
-void updateScreen(Square square){
+void updateScreen(Square square, SDL_Renderer* ren){
     //Clear screen
     SDL_SetRenderDrawColor(ren, 0xFF, 0xFF, 0xFF, 0xFF);
     SDL_RenderClear(ren);
@@ -55,10 +51,14 @@ int main() {
     int relX=0;
     int relY=0;
 
-    if (init()){
+    SDL_Window* win = nullptr;
+    SDL_Renderer* ren = nullptr;
+    SDL_Event e;
+
+    if (init(&win, &ren)){
         while (!quit){
             //Draw square
-            updateScreen(square);
+            updateScreen(square, ren);
 
             while (SDL_PollEvent(&e) != 0){
                 SDL_GetMouseState(&mouseX, &mouseY);
@@ -82,7 +82,7 @@ int main() {
                     square.setX(relX + mouseX);
                     square.setY(relY + mouseY);
 
-                    updateScreen(square);
+                    updateScreen(square, ren);
                 }
             }
         }
