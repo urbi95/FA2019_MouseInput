@@ -67,7 +67,7 @@ int main() {
                     quit = true;
                 }
                 else if (e.type == SDL_MOUSEBUTTONDOWN){
-                    if (!dragging && square.isInside(mouseX, mouseY)){
+                    if (square.isInside(mouseX, mouseY)){
                         //We clicked inside the square
                         dragging = true;
                         relX = square.getX() - mouseX;
